@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Meetanshi_ImageClean>
+        	<active>true</active>
+        	<codePool>local</codePool>
+        </Meetanshi_ImageClean>
+    </modules>
+</config>

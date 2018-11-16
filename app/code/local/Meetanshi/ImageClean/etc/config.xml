@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Meetanshi_ImageClean>
+            <version>1.0.0</version>
+        </Meetanshi_ImageClean>
+    </modules>
+	<global>
+		<helpers>
+      		<imageclean>
+        		<class>Meetanshi_ImageClean_Helper</class>
+      		</imageclean>
+    	</helpers>
+		<resources>
+			<imageclean_setup>
+				<setup>
+					<module>Meetanshi_ImageClean</module>
+					<class>Meetanshi_ImageClean_Model_Resource_Setup</class>
+				</setup>
+			</imageclean_setup>
+		</resources> 
+		<blocks>
+      		<imageclean>
+				<class>Meetanshi_ImageClean_Block</class>
+	 		</imageclean>
+	    </blocks>
+		<models>
+       		<imageclean>
+            	<class>Meetanshi_ImageClean_Model</class>
+	            <resourceModel>imageclean_mysql4</resourceModel>
+        	</imageclean>
+				<imageclean_mysql4>
+            	    <class>Meetanshi_ImageClean_Model_Mysql4</class>
+			               <entities>
+              				    <imageclean>
+			                        <table>imageclean</table>
+               				    </imageclean>
+						  </entities>
+            	</imageclean_mysql4>
+		 </models>
+	</global>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Meetanshi_ImageClean after="Mage_Adminhtml">Meetanshi_ImageClean_Adminhtml</Meetanshi_ImageClean>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+</config>

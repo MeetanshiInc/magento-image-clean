@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adminhtml>
+    <menu>
+        <imageclean translate="title" module="imageclean">
+            <title>Image Clean</title>
+            <sort_order>122</sort_order>
+        </imageclean>
+        <imageclean>
+            <children>
+                <categoryproduct translate="title">
+                    <title>Product Unused Images</title>
+                    <action>adminhtml/productimageclean</action>
+                    <sort_order>100</sort_order>
+                </categoryproduct>
+                <categoryclean translate="title">
+                    <title>Category Unused Images</title>
+                    <action>adminhtml/categoryimageclean</action>
+                    <sort_order>200</sort_order>
+                </categoryclean>
+
+            </children>
+        </imageclean>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <imageclean module="imageclean" translate="title">
+                        <title>Image Clean</title>
+                        <sort_order>900</sort_order>
+                        <children>
+                            <categoryproduct module="imageclean" translate="title">
+                                <title>Product Unused Images</title>
+                                <sort_order>1</sort_order> //dont need action tag bellow
+                            </categoryproduct>
+                            <categoryclean module="imageclean" translate="title">
+                                <title>Category Unused Images</title>
+                                <sort_order>3</sort_order> //dont need action tag bellow
+                            </categoryclean>
+                        </children>
+                    </imageclean>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+
+</adminhtml>
