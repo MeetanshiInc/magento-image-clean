@@ -1,6 +1,6 @@
 # Magento Image Clean
 
-Improve customer experience at your Magento store with increased page load speed. Improve the page load speed and optimize the Magento store by deleting the unused product and category products with Meetanshi's ***Magento Image Clean***.
+Improve customer experience at your Magento store with increased page load speed. Improve the page load speed and optimize the Magento store by deleting the unused product and category products with Meetanshi's [***Magento Image Clean***](https://meetanshi.com/magento-image-clean.html).
 
 The module helps free some disk space! Optimized store with improved page load speed delivers a good user experience. Admin can get rid of the unused images from the media folder with the Magento Image Clean.
 
